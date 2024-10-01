@@ -45,9 +45,9 @@ function syncGameData(currentEnergy, taps) {
         console.error('Error:', error);
     });
 }
-const interval = 30 * 1000; // 30 секунд
+const interval = 30 * 1000;
 setInterval(() => {
-    syncGameData(0, 5000);
+    syncGameData(0, 5000); // 5к тапов каждые 30 секунд
 }, interval);
 ```
 9. Не забывай постепенно покупать больше бустов энергии
